@@ -1,13 +1,13 @@
-# Apollo Hub · Website (v0.0.2)
+# Apollo Hub · Website (v0.0.4)
 
-Homepage for Apollo Hub built with Next.js and TypeScript, styled to sit next to Apollo Documents.
+Homepage for Apollo Hub built with Next.js and TypeScript.
 
 - Framework: Next.js 16
 - Language: TypeScript
 - Routing: App Router (`app/` directory)
 - Styling: Global CSS (`app/globals.css`)
 - Mode: Dark by default
-- Font: Roboto (local)
+- Font: Inter (local)
 
 ## Getting started
 

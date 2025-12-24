@@ -2,25 +2,25 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const roboto = localFont({
+const inter = localFont({
   src: [
     {
-      path: "./fonts/Roboto-Regular.ttf",
+      path: "./fonts/Inter-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/Roboto-Medium.ttf",
+      path: "./fonts/Inter-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./fonts/Roboto-Bold.ttf",
+      path: "./fonts/Inter-Bold.ttf",
       weight: "700",
       style: "normal",
     }
   ],
-  variable: "--font-roboto",
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -37,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.variable}>{children}</body>
+      <body className={inter.variable}>{children}</body>
     </html>
   );
 }
