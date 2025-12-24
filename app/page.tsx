@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const SITE_VERSION = "0.0.4" as const;
+const SITE_VERSION = "0.0.5" as const;
 
 export default function HomePage() {
   const [whoOpen, setWhoOpen] = useState(false);
@@ -19,7 +19,6 @@ export default function HomePage() {
             </div>
             <div className="logo-text">
               <span className="logo-title">Apollo Hub</span>
-              <span className="logo-subtitle">Open-source productivity suite</span>
             </div>
           </Link>
 
@@ -158,10 +157,6 @@ export default function HomePage() {
             >
               <div className="section-toggle-text">
                 <h2 className="section-title">Who uses Apollo Hub</h2>
-                <p className="section-subtitle">
-                  Teams that want a consistent, low-noise home screen instead of
-                  yet another busy dashboard.
-                </p>
               </div>
               <img
                 src={whoOpen ? "/icons/arrow-down.svg" : "/icons/arrow-up.svg"}
