@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SITE_VERSION = "0.0.0" as const;
+const SITE_VERSION = "0.0.1" as const;
 
 export default function HomePage() {
   return (
@@ -13,7 +13,7 @@ export default function HomePage() {
             </div>
             <div className="logo-text">
               <span className="logo-title">Apollo Hub</span>
-              <span className="logo-subtitle">Workspace OS</span>
+              <span className="logo-subtitle">Team home</span>
             </div>
           </Link>
 
@@ -66,23 +66,18 @@ export default function HomePage() {
 
         <main className="main">
           <section className="hero">
-            <div className="hero-content">
-              <div className="hero-pill">
-                <span className="hero-pill-indicator" />
-                <span className="hero-pill-text">
-                  Speed-first, privacy-first workspace hub
-                </span>
-              </div>
-
+            <div className="hero-main">
+              <p className="hero-kicker">
+                Dark, minimal starting point for your team’s work.
+              </p>
               <h1 className="hero-title">
-                Bring your work into
-                <span className="hero-title-gradient"> one focused hub.</span>
+                Keep internal docs and links aligned in one calm place.
               </h1>
-
               <p className="hero-subtitle">
-                Apollo Hub connects your documents, apps, and workflows into a
-                single, distraction-light workspace. Built for teams that move
-                fast and care about security, control, and clarity.
+                Apollo Hub gives your team a simple home screen for documents,
+                key links, and internal tools—without feeds, timelines, or
+                clutter. Open your day to the same clear starting point, every
+                time.
               </p>
 
               <div className="hero-cta">
@@ -91,70 +86,61 @@ export default function HomePage() {
                   className="btn btn-primary"
                   aria-disabled="true"
                 >
-                  Explore Apollo Hub
+                  Preview the hub
                 </button>
                 <button
                   type="button"
                   className="btn btn-ghost"
                   aria-disabled="true"
                 >
-                  Talk to our team
+                  Get in touch
                 </button>
               </div>
 
-              <div className="hero-meta">
+              <div className="hero-meta-row">
                 <span className="hero-meta-item">
-                  • Unified workspace for teams
+                  Built for product, engineering, and ops
                 </span>
                 <span className="hero-meta-item">
-                  • Opinionated for focus, not noise
+                  Optimized for long, focused sessions
                 </span>
                 <span className="hero-meta-item">
-                  • Designed for privacy-sensitive organizations
+                  Designed for docs first, apps next
                 </span>
               </div>
             </div>
 
-            <div className="hero-panel">
-              <div className="hero-panel-header">
-                <span className="hero-panel-label">Snapshot</span>
-                <span className="hero-panel-tag">Apollo Hub · v{SITE_VERSION}</span>
-              </div>
-
-              <div className="hero-panel-grid">
-                <div className="hero-card">
-                  <h3 className="hero-card-title">What it is</h3>
-                  <p className="hero-card-body">
-                    A central hub that keeps your documents, tasks, and
-                    knowledge in one place—without turning into an endless feed
-                    of noise.
-                  </p>
+            <div className="hero-aside" aria-label="Apollo Hub overview">
+              <div className="hero-aside-shell">
+                <div className="hero-aside-header">
+                  <span className="hero-aside-label">At a glance</span>
+                  <span className="hero-aside-version">
+                    Apollo Hub · v{SITE_VERSION}
+                  </span>
                 </div>
-
-                <div className="hero-card">
-                  <h3 className="hero-card-title">What it replaces</h3>
-                  <p className="hero-card-body">
-                    Sprawling folders, scattered tools, and “where is that
-                    link?” threads. Apollo Hub gives you a single home for work
-                    that matters.
-                  </p>
-                </div>
-
-                <div className="hero-card">
-                  <h3 className="hero-card-title">How it feels</h3>
-                  <p className="hero-card-body">
-                    Fast, calm, and predictable. Dark UI by default, tuned for
-                    long work sessions and teams that live in their tools.
-                  </p>
-                </div>
-
-                <div className="hero-card">
-                  <h3 className="hero-card-title">Where it starts</h3>
-                  <p className="hero-card-body">
-                    With Apollo Documents—our opinionated editor for
-                    focus-heavy writing, documentation, and internal knowledge.
-                  </p>
-                </div>
+                <ul className="hero-aside-list">
+                  <li>
+                    <p className="hero-aside-heading">What Apollo Hub is</p>
+                    <p className="hero-aside-text">
+                      A centered home view that holds the docs and internal
+                      links your team actually uses daily.
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hero-aside-heading">What it is not</p>
+                    <p className="hero-aside-text">
+                      Not a social feed, chat client, or “workspace OS”—just a
+                      deliberately small surface for important work.
+                    </p>
+                  </li>
+                  <li>
+                    <p className="hero-aside-heading">Where it starts</p>
+                    <p className="hero-aside-text">
+                      With Apollo Documents and a small set of apps that you
+                      pin to the hub as your source of truth.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -163,61 +149,61 @@ export default function HomePage() {
             <div className="section-header">
               <h2 className="section-title">Who Apollo Hub is for</h2>
               <p className="section-subtitle">
-                Built for teams that need a reliable internal system of record,
-                not another social feed.
+                Designed for teams who want a calm, predictable place to start
+                their day.
               </p>
             </div>
 
             <div className="audience-grid">
-              <div className="audience-card">
-                <h3 className="audience-title">Product &amp; ops teams</h3>
-                <p className="audience-body">
-                  Centralize specs, runbooks, and internal docs so your team
-                  always knows where to look and what is current.
+              <div className="audience-item">
+                <h3 className="audience-title">Product &amp; operations</h3>
+                <p className="audience-text">
+                  Centralize specs, runbooks, and templates so the team is not
+                  hunting through chats and folders.
                 </p>
               </div>
-              <div className="audience-card">
-                <h3 className="audience-title">Engineering &amp; data orgs</h3>
-                <p className="audience-body">
-                  Keep technical knowledge, decisions, and documentation in a
-                  hub that respects structure, ownership, and version history.
+              <div className="audience-item">
+                <h3 className="audience-title">Engineering &amp; data</h3>
+                <p className="audience-text">
+                  Keep docs, decision records, and dashboards close together so
+                  context is always one click away.
                 </p>
               </div>
-              <div className="audience-card">
-                <h3 className="audience-title">Security-minded companies</h3>
-                <p className="audience-body">
-                  For organizations that care where data lives, who can see it,
-                  and how it flows between tools.
+              <div className="audience-item">
+                <h3 className="audience-title">Leaders &amp; ICs</h3>
+                <p className="audience-text">
+                  Give everyone the same quiet home screen, whether they are
+                  planning, writing, or just catching up.
                 </p>
               </div>
             </div>
           </section>
 
-          <section className="section">
+          <section className="section section-tight">
             <div className="section-header">
-              <h2 className="section-title">Why teams choose Apollo Hub</h2>
+              <h2 className="section-title">How teams use Apollo Hub</h2>
             </div>
 
-            <div className="value-grid">
-              <div className="value-card">
-                <h3 className="value-title">Designed for focus</h3>
-                <p className="value-body">
-                  A calm, dark interface tuned for deep work—not for passive
-                  consumption. Less chrome, more content.
+            <div className="usage-grid">
+              <div className="usage-item">
+                <h3 className="usage-title">Start the day from one page</h3>
+                <p className="usage-text">
+                  Open to the same calm starting view: today’s docs, key links,
+                  and the apps your team relies on.
                 </p>
               </div>
-              <div className="value-card">
-                <h3 className="value-title">Structured by default</h3>
-                <p className="value-body">
-                  Opinionated information architecture helps teams avoid chaos
-                  while still staying flexible enough to grow with you.
+              <div className="usage-item">
+                <h3 className="usage-title">Keep docs front and center</h3>
+                <p className="usage-text">
+                  Use Apollo Documents as the default surface for writing,
+                  documentation, and internal notes.
                 </p>
               </div>
-              <div className="value-card">
-                <h3 className="value-title">Ready to extend</h3>
-                <p className="value-body">
-                  Apollo Hub starts with docs and gradually expands to apps,
-                  automations, and integrations—on your timeline.
+              <div className="usage-item">
+                <h3 className="usage-title">Grow into more apps over time</h3>
+                <p className="usage-text">
+                  Start with docs and a few pinned tools, then layer in more
+                  apps as your hub becomes the obvious home screen.
                 </p>
               </div>
             </div>
@@ -231,7 +217,7 @@ export default function HomePage() {
             <span className="footer-version">Version {SITE_VERSION}</span>
           </div>
           <div className="footer-right">
-            <span className="footer-note">Focused work, one hub.</span>
+            <span className="footer-note">A dark, minimal home for your team.</span>
           </div>
         </footer>
       </div>

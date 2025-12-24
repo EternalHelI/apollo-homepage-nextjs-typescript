@@ -1,12 +1,13 @@
-# Apollo Hub · Next.js App (v0.0.0)
+# Apollo Hub · Website (v0.0.1)
 
-This is a minimal Next.js + TypeScript app for the Apollo Hub homepage.
+Minimal dark homepage for Apollo Hub built with Next.js and TypeScript.
 
 - Framework: Next.js 16
 - Language: TypeScript
 - Routing: App Router (`app/` directory)
 - Styling: Global CSS (`app/globals.css`)
-- Mode: Dark by default, orange/red accents
+- Mode: Dark by default, space-inspired background
+- Font: Roboto (local)
 
 ## Getting started
 
