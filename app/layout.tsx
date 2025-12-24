@@ -5,20 +5,20 @@ import "./globals.css";
 const roboto = localFont({
   src: [
     {
-      path: "../public/fonts/Roboto/Roboto-Regular.ttf",
+      path: "./fonts/Roboto-Regular.ttf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../public/fonts/Roboto/Roboto-Medium.ttf",
+      path: "./fonts/Roboto-Medium.ttf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../public/fonts/Roboto/Roboto-Bold.ttf",
+      path: "./fonts/Roboto-Bold.ttf",
       weight: "700",
       style: "normal",
-    },
+    }
   ],
   variable: "--font-roboto",
   display: "swap",
@@ -27,7 +27,7 @@ const roboto = localFont({
 export const metadata: Metadata = {
   title: "Apollo Hub · Home",
   description:
-    "Apollo Hub is a minimal, space-inspired home for your team’s docs and internal tools.",
+    "Apollo Hub is a dark, minimal home for your team’s documents and internal links.",
 };
 
 export default function RootLayout({
