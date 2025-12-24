@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const SITE_VERSION = "0.0.5" as const;
+const SITE_VERSION = "0.0.6" as const;
+
+const HERO_TITLE = "A calm starting point for your team’s internal work." as const;
 
 export default function HomePage() {
   const [whoOpen, setWhoOpen] = useState(false);
@@ -96,8 +98,19 @@ export default function HomePage() {
           <section className="hero">
             <div className="hero-left">
               <p className="hero-label">Apollo Hub · Overview</p>
-              <h1 className="hero-title">
-                A calm starting point for your team’s internal work.
+              <h1
+                className="hero-title hero-title-wavy"
+                aria-label={HERO_TITLE}
+              >
+                {HERO_TITLE.split("").map((char, index) => (
+                  <span
+                    key={index}
+                    className="hero-title-char"
+                    style={{ animationDelay: `${index * 0.05}s` }}
+                  >
+                    {char}
+                  </span>
+                ))}
               </h1>
               <p className="hero-subtitle">
                 Apollo Hub is an open-source productivity suite designed to deliver

@@ -1,4 +1,4 @@
-# Apollo Hub · Website (v0.0.5)
+# Apollo Hub · Website (v0.0.6)
 
 Homepage for Apollo Hub built with Next.js and TypeScript.
 
